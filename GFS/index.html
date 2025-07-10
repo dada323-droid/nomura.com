@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 必填的Open Graph协议 -->
+<meta property="og:title" content="次世代の爆益銘柄をプロが厳選してご紹介！">
+<meta property="og:description" content="AI分析と専門アナリストの知見を融合し、市場をリードする爆益銘柄をタイムリーにご紹介！">
+<meta property="og:image" content="https://github.com/user-attachments/assets/52516cf4-16ac-4cab-ac92-8b172b78eda2"> 
+<meta property="og:url" content="https://您的完整网页URL">
+
+<!-- Twitter专用标签 -->
+<meta name="twitter:card" content="summary_large_image"> <!-- 关键修改！ -->
+<meta name="twitter:site" content="@shikiho_10">
+<meta name="twitter:title" content="次世代の爆益銘柄をプロが厳選してご紹介！">
+<meta name="twitter:description" content="AI分析と専門アナリストの知見を融合し、市場をリードする爆益銘柄をタイムリーにご紹介！">
+<meta name="twitter:image" content="https://github.com/user-attachments/assets/52516cf4-16ac-4cab-ac92-8b172b78eda2"> 
+<meta name="twitter:url" content="https://您的完整网页URL">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爆益銘柄推薦 | 高成長株投資プラットフォーム</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a6dcc;
+            --secondary-color: #e74c3c;
+            --accent-color: #27ae60;
+            --light-bg: #f8f9fa;
+            --dark-bg: #2c3e50;
+            --text-dark: #333333;
+            --text-light: #f8f9fa;
+            --border-radius: 4px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* ヘッダースタイル */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 8px;
+            color: var(--secondary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background-color: #1557a5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 109, 204, 0.25);
+        }
+        
+        /* ヒーローセクション */
+        .hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="none" stroke="%231a6dcc" stroke-width="0.5" stroke-dasharray="5,5"/></svg>') repeat;
+            opacity: 0.05;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .hero-image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            background: linear-gradient(45deg, #e0e7ff, #d1e0fd);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .hero-image-placeholder i {
+            font-size: 5rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            color: var(--dark-bg);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+            max-width: 600px;
+        }
+        
+        .highlight {
+            color: var(--secondary-color);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: rgba(231, 76, 60, 0.2);
+            z-index: -1;
+        }
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+}
+        
+.card {
+    text-align: center;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    background: white;
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+}
+
+        /* 特徴セクション */
+        .features {
+            padding: 100px 0;
+            background-color: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--dark-bg);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(26, 109, 204, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark-bg);
+        }
+        
+        .feature-card p {
+            color: #666;
+        }
+        
+.testimonials {
+    padding: 100px 0;
+    background-color: white; /* 可按需更改背景色 */
+}
+
+.testimonials .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+        /* 銘柄推薦セクション */
+        .recommendations {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .stocks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .stock-card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+        
+        .stock-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .stock-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .stock-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .stock-code {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .stock-content {
+            padding: 20px;
+        }
+        
+        .stock-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .metric-positive {
+            color: var(--accent-color);
+        }
+        
+        .metric-negative {
+            color: var(--secondary-color);
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .stock-description {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .stock-footer {
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #eee;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+
+        
+        /* CTAセクション */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0d4a9e 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button.large {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            background-color: white;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .cta-button.large:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* フッター */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            padding: 70px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            width: 20px;
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* レスポンシブデザイン */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            
+            .hero p {
+                max-width: 100%;
+            }
+            
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 130px 0 70px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .features,
+            .recommendations,
+            .comparison,
+            .cta-section {
+                padding: 70px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <span>株リサーチ</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#testimonials">実績</a></li>
+            </ul>
+            <a href="https://works.do/Fjqp1QH" class="cta-button">詳細確認</a>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>次世代の<span class="highlight">爆益銘柄</span>を<br>プロが厳選してご紹介</h1>
+                <p>AI分析と専門アナリストの知見を融合し、市場をリードする爆益銘柄をタイムリーにご紹介！登録は完全無料。</p>
+                <a href="https://works.do/Fjqp1QH" class="cta-button">詳細確認</a>
+            </div>
+           <section>
+  
+<div style="width: 180px; height: 180px; border-radius: 50%; overflow: hidden; margin: auto;">
+  <img src="https://github.com/user-attachments/assets/26e59723-0d10-43f5-a658-b31e847f95d5" alt="投資アドバイザー" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+<div style="margin-top: 10px; line-height: 1.6;">
+  <p><strong>代表講師：市川雄一郎</strong></p>
+  <p>投資歴28年<br>
+     自身は3万円から投資を始めて経済的自由を獲得<br>
+     指導実績25年<br>
+     指導人数3.5万人以上<br>
+     1億円以上の資産形成に成功した人も！</p>
+</section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特徴セクション -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>サービスの特徴</h2>
+                <p>当サービスが選ばれる理由 - 他にはない独自のアプローチで投資家の皆様をサポートします</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI予測分析</h3>
+                    <p>AIアルゴリズムが市場を完全解析——注目セクターをピンポイントで特定！従来のアナリスト予測を遥かに超える精度で、次の急騰を先取り。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>アナリストチーム</h3>
+                    <p>15年以上の経験を持つ5名のプロフェッショナルが在籍。鋭い視点で、質の高い銘柄選定を実現。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>リアルタイム通知</h3>
+                    <p>市場の動きや取引チャンスを即時に通知。迷わず次の一手へ。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>リスク管理</h3>
+                    <p>経験豊富なプロがポートフォリオのリスクを分析。勝つための最善の一手を導き出す。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>資産配分の最適化</h3>
+                    <p>最適な投資ポートフォリオを構築し、資産全体をバランス良く最適化。多様な投資先で安定したリターンを目指す。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>投資教育</h3>
+                    <p>実践的な投資知識をわかりやすく解説し、有名投資家の戦略やテクニックも共有。初心者から上級者まで幅広く役立つ内容を提供。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 実績セクション -->
+    <section class="testimonials" id="testimonials">
+</section>
+  <div class="container">
+    <div class="section-title">
+      <h2>6月の実践成績</h2>
+      <p>日本株・米国株を含む秘密の銘柄で圧倒的な実績！<br></p>
+        <div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/72650ed4-ca4f-408a-ab8d-4f71a47f2d94" alt="相場予測ノート" style="max-width: 100%; height: auto; display: block; margin: 20px auto 0;">
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- CTAセクション -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <h2>今すぐ無料登録して<br>爆益銘柄情報をゲット</h2>
+            <a href="https://works.do/Fjqp1QH" class="cta-button large">詳細確認</a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>株リサーチ</h3>
+                    <p>© 2025 株リサーチ｜投資は自己責任でお願いします</p>
+         
+                    </div>
+                </div>
+
+    </script>
+</body>
+</html>
