@@ -207,29 +207,19 @@
 
 <script>
 function trackClick() {
-  // 构造发送的数据
-  const payload = {
-    action: "LINEクリック",
-    source: "pafe_landing"
-  };
-
-  // 发送到 Google Apps Script
+  const payload = { action: "LINEクリック", source: "pafe_landing" };
   fetch("https://script.google.com/macros/s/AKfycbw_zw_eYy49NZvHg-aD8QrluwJsUkUVt0j2Ny4tZ11aT4O7eSX5YyUa1i2gNdgpo7x54A/exec", {
     method: "POST",
-    body: JSON.stringify(payload),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  }).then(() => {
-    // 成功发送后再跳转到 LINE 添加链接
-    window.location.href = "https://works.do/5pt13Za";
-  }).catch(err => {
-    console.error("统计失败", err);
-    // 如果失败也跳转，避免用户卡住
-    window.location.href = "https://works.do/5pt13Za";
-  });
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  }).catch(console.error)
+    .finally(() => {
+      window.location.href = "https://works.do/5pt13Za";
+    });
 }
 </script>
+
 
 </body>
 </html>
