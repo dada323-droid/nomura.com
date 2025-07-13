@@ -244,62 +244,95 @@ var e=ttq._i[t][],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n])
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 10px;
+  padding: 10px;
   font-family: 'Noto Sans JP', sans-serif;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
   flex-wrap: wrap;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
 }
+
 .floating-left-tag {
   background: #fff;
   color: #2c7d72;
   font-weight: bold;
-  border: 3px solid #2c7d72;
-  padding: 6px 12px;
-  margin-right: 16px;
-  border-radius: 6px;
+  border: 2px solid #2c7d72;
+  padding: 4px 8px;
+  margin: 4px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 1.2;
 }
+
 #countdown {
   display: flex;
-  gap: 8px;
-  font-size: 18px;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
   font-weight: bold;
+  margin: 4px;
 }
+
 .count-block {
   background: #fff;
   color: #333;
-  padding: 4px 10px;
+  padding: 4px 8px;
   border-radius: 4px;
-  min-width: 30px;
+  min-width: 28px;
   text-align: center;
+  font-size: 14px;
 }
+
 .floating-button {
-  margin-left: 20px;
+  margin: 4px;
   background: #ffc600;
   color: #000;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 16px;
   border-radius: 6px;
   text-decoration: none;
   box-shadow: 0 3px 5px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
+  font-size: 14px;
 }
+
 .floating-button:hover {
   background: #ffb800;
 }
+
 #scrollTopBtn {
   position: fixed;
   right: 12px;
-  bottom: 70px;
+  bottom: 75px;
   background: #1c2e6f;
   color: #fff;
-  padding: 8px 14px;
+  padding: 6px 10px;
   font-size: 12px;
   border-radius: 6px;
   cursor: pointer;
   z-index: 9999;
   font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 480px) {
+  #floating-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 8px;
+  }
+  .floating-button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+  }
+  #scrollTopBtn {
+    bottom: 90px;
+  }
 }
 </style>
+
 
 <div id="floating-bar">
   <div class="floating-left-tag">急騰株<br>最終受取期限</div>
