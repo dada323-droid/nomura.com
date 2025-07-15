@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINE追加中...</title>
+  <meta http-equiv="refresh" content="2; url=https://line.me/ti/p/57gdqtGwrk">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    .loading {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    .spinner {
+      border: 6px solid #e0e0e0;
+      border-top: 6px solid #4CAF50;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .note {
+      font-size: 0.9rem;
+      margin-top: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">LINEの追加ページに移動しています...</div>
+  <div class="spinner"></div>
+  <div class="note">※自動で移動しない場合は<a href="https://line.me/ti/p/57gdqtGwrk">こちらをクリック</a></div>
+
+  <script>
+    // 点击事件或统计逻辑（示例）
+    fetch("https://script.google.com/macros/s/你的AppsScriptURL/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "中转跳转", source: "TikTok-LP" })
+    });
+  </script>
+</body>
+</html>
